@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="329.0" prefWidth="446.0" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/25" fx:controller="org.example.calculadordeimc.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <Label alignment="TOP_LEFT" text="Peso (kg):">
+      <VBox.margin>
+         <Insets right="350.0" />
+      </VBox.margin>
+   </Label>
+   <TextField fx:id="tf1" promptText="___________" />
+   <Label text="Altura (m):">
+      <VBox.margin>
+         <Insets right="350.0" />
+      </VBox.margin>
+   </Label>
+   <TextField fx:id="tf2" promptText="___________" />
+
+    <Label fx:id="welcomeText" />
+    <Button maxHeight="41.0" maxWidth="400.0" minHeight="30.0" minWidth="400.0" onAction="#onHelloButtonClick" prefHeight="33.0" prefWidth="400.0" style="-fx-background-color: #4CAF50;;" text="Calcular" textFill="WHITE">
+      <VBox.margin>
+         <Insets />
+      </VBox.margin>
+      <font>
+         <Font name="System Bold" size="16.0" />
+      </font></Button>
+   <Label fx:id="lResult" text="Resultado:">
+      <VBox.margin>
+         <Insets />
+      </VBox.margin>
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font>
+   </Label>
+</VBox>
