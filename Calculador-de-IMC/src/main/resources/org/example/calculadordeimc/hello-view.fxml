@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="CENTER" prefHeight="329.0" prefWidth="446.0" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/25" fx:controller="org.example.calculadordeimc.HelloController">
+<VBox alignment="CENTER" prefHeight="329.0" prefWidth="446.0" spacing="20.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.calculadordeimc.HelloController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
@@ -22,22 +22,25 @@
          <Insets right="350.0" />
       </VBox.margin>
    </Label>
-   <TextField fx:id="tf2" promptText="___________" />
+   <TextField fx:id="tf2" promptText="___________">
+      <VBox.margin>
+         <Insets bottom="-30.0" />
+      </VBox.margin></TextField>
 
     <Label fx:id="welcomeText" />
-    <Button maxHeight="41.0" maxWidth="400.0" minHeight="30.0" minWidth="400.0" onAction="#onHelloButtonClick" prefHeight="33.0" prefWidth="400.0" style="-fx-background-color: #4CAF50;;" text="Calcular" textFill="WHITE">
+    <Button maxHeight="41.0" maxWidth="400.0" minHeight="30.0" minWidth="400.0" onAction="#onHelloButtonClick" prefHeight="33.0" prefWidth="406.0" style="-fx-background-color: #4CAF50; -fx-background-radius: 5;" text="Calcular" textFill="WHITE">
       <VBox.margin>
          <Insets />
       </VBox.margin>
       <font>
          <Font name="System Bold" size="16.0" />
       </font></Button>
-   <Label fx:id="lResult" text="Resultado:">
+   <Label fx:id="lResult" alignment="CENTER" maxHeight="41.0" maxWidth="400.0" minHeight="30.0" minWidth="400.0" prefHeight="33.0" prefWidth="406.0" style="-fx-background-color: lightgray; -fx-background-radius: 5; -fx-border-color: gray; -fx-border-radius: 5; -fx-border-width: 1;" text="Resultado:">
       <VBox.margin>
          <Insets />
       </VBox.margin>
       <font>
-         <Font name="System Bold" size="12.0" />
+         <Font name="System Bold" size="16.0" />
       </font>
    </Label>
 </VBox>
